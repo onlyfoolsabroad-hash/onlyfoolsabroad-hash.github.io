@@ -1,0 +1,3 @@
+import{r as t,p as e,j as s}from"./index-DXsBkYyX.js";function c(){const[,n]=t.useState(0);t.useEffect(()=>{window.__fmPerf=e;const i=window.setInterval(()=>n(r=>r+1),500);return()=>window.clearInterval(i)},[]);const o=document.querySelectorAll("canvas").length;return s.jsx("pre",{style:{position:"fixed",right:8,bottom:8,zIndex:20,margin:0,padding:"6px 8px",background:"#000c",color:"#0f0",font:"12px/1.4 ui-monospace, monospace"},children:`fps ${e.fps.toFixed(0)}  draw ${e.drawCalls}  commits ${e.commits}
+${window.innerWidth}x${window.innerHeight} dpr ${window.devicePixelRatio}  canvases ${o}${e.bench?`
+${e.bench}`:""}`})}export{c as default};
